@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="start"><button class="startbtn">Start Quiz</button></div>
+    <div class="display">
+      <div class="tex">
+        <div class="title">Some Rules Of This Quiz</div>
+        <div class="text">
+          1. You have <span>15seconds</span> to answer this questions
+        </div>
+        <div class="text">
+          2. Once you select your answer you can't reselect
+        </div>
+        <div class="text">
+          3. You can't select any option once your time goes off
+        </div>
+        <div class="text">
+          4. You can't exit from the quiz while you're playing
+        </div>
+        <div class="text">
+          5. You'll get points on the basis of your correct answer
+        </div>
+        <div class="buttons">
+          <button class="btn exit" id="exit" onclick="exitFunction()">
+            Exit Quiz
+          </button>
+          <button
+            class="btn Continue"
+            id="continue"
+            onclick="continueFunction()"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+      <div class="questions">
+        <header class="heading">
+          <div class="head">Awesome Quiz Application</div>
+          <div class="timer">
+            <div class="timetext">Time Left</div>
+            <div class="timeleft" id="demo"></div>
+          </div>
+        </header>
+
+        <div class="html1">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options" data-number="1">choice1</li>
+            <li class="options" data-number="2">choice2</li>
+            <li class="options" data-number="3">choice3</li>
+            <li class="options" data-number="4">choice4</li>
+          </ul>
+        </div>
+        <button class="next" onclick="nextFunction()">Next</button>
+        <div class="html">
+          <div class="quest"></div>
+          <!-- <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div>
+        <div class="html">
+          <div class="quest"></div>
+          <ul class="answers">
+            <li class="options">Hyper Text Makeup Language</li>
+            <li class="options">Hyper Text MarkUp Language</li>
+            <li class="options">Higher text madeup Language</li>
+            <li class="options">High text markup logitech</li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
